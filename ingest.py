@@ -36,10 +36,10 @@ class SensorReading(Base):
 
 def create_db_engine():
     """Create and return SQLAlchemy engine"""
-    DB_USER = ''
+    DB_USER = 'admin'
     DB_PASS = os.getenv('DBPASS')
-    DB_HOST = ''
-    DB_NAME = ''
+    DB_HOST = 'database-1.clth4tcogy5y.us-east-1.rds.amazonaws.com'
+    DB_NAME = 'cwe9gz'
     DB_PORT = '3306'
     
     connection_string = f"mysql+pymysql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
